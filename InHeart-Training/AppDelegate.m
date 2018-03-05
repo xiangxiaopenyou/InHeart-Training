@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "XJTLoginViewController.h"
+#import "XJTMainTabBarController.h"
+#import "XJTConnectIPViewController.h"
+#import "XJTConnectNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    //[self checkLoginStatus];
+    [self connetStatus:nil];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -45,6 +54,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Login status
+- (void)checkLoginStatus {
+//    if (XJTIsLogin) {
+        XJTMainTabBarController *mainTabBarController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTMainTab"];
+        self.window.rootViewController = mainTabBarController;
+//    } else {
+//        XJTLoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTLogin"];
+//        self.window.rootViewController = loginController;
+//    }
+}
+
+#pragma mark - Connet status
+- (void)connetStatus:(NSNotification *)notification {
+    if ([notification.object boolValue]) {
+        
+    } else {
+        XJTConnectIPViewController *ipController = [[UIStoryboard storyboardWithName:@"Connect" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTConnectIP"];
+        XJTConnectNavigationController *navigation = [[XJTConnectNavigationController alloc] initWithRootViewController:ipController];
+        self.window.rootViewController = navigation;
+    }
 }
 
 

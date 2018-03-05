@@ -7,14 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0CE503201ED5FB0062BA49 /* XLAlertControllerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE4F8201ED5FB0062BA49 /* XLAlertControllerObject.m */; };
+		3D0CE504201ED5FB0062BA49 /* XLBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE4FA201ED5FB0062BA49 /* XLBlockActionSheet.m */; };
+		3D0CE505201ED5FB0062BA49 /* XLBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE4FC201ED5FB0062BA49 /* XLBlockAlertView.m */; };
+		3D0CE506201ED5FB0062BA49 /* XLBlockedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE4FE201ED5FB0062BA49 /* XLBlockedButton.m */; };
+		3D0CE508201ED5FB0062BA49 /* XLHyperLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE502201ED5FB0062BA49 /* XLHyperLinkButton.m */; };
+		3D358189200C441C00C305FF /* XJTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D358188200C441C00C305FF /* XJTLoginViewController.m */; };
+		3D35818C200C483500C305FF /* XJTCommonsDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D35818B200C483500C305FF /* XJTCommonsDefines.m */; };
+		3D35818F200C495400C305FF /* XJTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D35818E200C495400C305FF /* XJTUtilities.m */; };
+		3D35819A200C53F500C305FF /* XJTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D358199200C53F500C305FF /* XJTMainTabBarController.m */; };
+		3D35819D200C796300C305FF /* XJTRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D35819C200C796300C305FF /* XJTRequestManager.m */; };
+		3D3581A0200C82C700C305FF /* XJTBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D35819F200C82C700C305FF /* XJTBaseRequest.m */; };
+		3D3581A3200D929A00C305FF /* XJTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3581A2200D929A00C305FF /* XJTBaseModel.m */; };
+		3D577D622015B63500AF2E59 /* XJTSearchPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D577D612015B63500AF2E59 /* XJTSearchPatientViewController.m */; };
+		3D577D662015B79700AF2E59 /* XJTTrainingCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D577D652015B79700AF2E59 /* XJTTrainingCenterViewController.m */; };
 		3D75A9FA2005EA1500231987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75A9F92005EA1500231987 /* AppDelegate.m */; };
-		3D75A9FD2005EA1500231987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75A9FC2005EA1500231987 /* ViewController.m */; };
 		3D75AA002005EA1500231987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D75A9FE2005EA1500231987 /* Main.storyboard */; };
 		3D75AA022005EA1500231987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D75AA012005EA1500231987 /* Assets.xcassets */; };
 		3D75AA052005EA1500231987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D75AA032005EA1500231987 /* LaunchScreen.storyboard */; };
 		3D75AA082005EA1500231987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA072005EA1500231987 /* main.m */; };
 		3D75AA122005EA1500231987 /* InHeart_TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA112005EA1500231987 /* InHeart_TrainingTests.m */; };
 		3D75AA1D2005EA1500231987 /* InHeart_TrainingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA1C2005EA1500231987 /* InHeart_TrainingUITests.m */; };
+		3D7DDBF12044EAFC0046BDAC /* Connect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */; };
+		3D7DDBF52044EE350046BDAC /* XJTConnectNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF42044EE350046BDAC /* XJTConnectNavigationController.m */; };
+		3D7DDBF82044EE570046BDAC /* XJTConnectIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF72044EE570046BDAC /* XJTConnectIPViewController.m */; };
+		3D7DDBFB204529930046BDAC /* XJTConnectBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBFA204529930046BDAC /* XJTConnectBlueToothViewController.m */; };
+		3D7DDBFF20453D3A0046BDAC /* XJTBlueToothCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBFE20453D3A0046BDAC /* XJTBlueToothCell.m */; };
+		3D7DDC072047A4070046BDAC /* XJTSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC062047A4060046BDAC /* XJTSocketManager.m */; };
+		3D7DDC0A2047CC3A0046BDAC /* XJTBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC092047CC3A0046BDAC /* XJTBleManager.m */; };
+		3D7DDC0D2047ED5D0046BDAC /* XJTContentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC0C2047ED5D0046BDAC /* XJTContentDataViewController.m */; };
+		3D7DDC13204922950046BDAC /* XJTAlertTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC12204922940046BDAC /* XJTAlertTipView.m */; };
 		5D406B974BFB53250C8A029F /* libPods-InHeart-Training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32BC3EE32DCE61E93BAFD1F /* libPods-InHeart-Training.a */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +59,39 @@
 
 /* Begin PBXFileReference section */
 		1093E17DA8D76D9F83121086 /* Pods-InHeart-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InHeart-Training.release.xcconfig"; path = "Pods/Target Support Files/Pods-InHeart-Training/Pods-InHeart-Training.release.xcconfig"; sourceTree = "<group>"; };
+		3D0CE4F7201ED5FB0062BA49 /* XLAlertControllerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLAlertControllerObject.h; sourceTree = "<group>"; };
+		3D0CE4F8201ED5FB0062BA49 /* XLAlertControllerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLAlertControllerObject.m; sourceTree = "<group>"; };
+		3D0CE4F9201ED5FB0062BA49 /* XLBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBlockActionSheet.h; sourceTree = "<group>"; };
+		3D0CE4FA201ED5FB0062BA49 /* XLBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBlockActionSheet.m; sourceTree = "<group>"; };
+		3D0CE4FB201ED5FB0062BA49 /* XLBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBlockAlertView.h; sourceTree = "<group>"; };
+		3D0CE4FC201ED5FB0062BA49 /* XLBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBlockAlertView.m; sourceTree = "<group>"; };
+		3D0CE4FD201ED5FB0062BA49 /* XLBlockedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBlockedButton.h; sourceTree = "<group>"; };
+		3D0CE4FE201ED5FB0062BA49 /* XLBlockedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBlockedButton.m; sourceTree = "<group>"; };
+		3D0CE501201ED5FB0062BA49 /* XLHyperLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLHyperLinkButton.h; sourceTree = "<group>"; };
+		3D0CE502201ED5FB0062BA49 /* XLHyperLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLHyperLinkButton.m; sourceTree = "<group>"; };
+		3D358187200C441C00C305FF /* XJTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTLoginViewController.h; sourceTree = "<group>"; };
+		3D358188200C441C00C305FF /* XJTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTLoginViewController.m; sourceTree = "<group>"; };
+		3D35818A200C483500C305FF /* XJTCommonsDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTCommonsDefines.h; sourceTree = "<group>"; };
+		3D35818B200C483500C305FF /* XJTCommonsDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTCommonsDefines.m; sourceTree = "<group>"; };
+		3D35818D200C495400C305FF /* XJTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTUtilities.h; sourceTree = "<group>"; };
+		3D35818E200C495400C305FF /* XJTUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTUtilities.m; sourceTree = "<group>"; };
+		3D358193200C4BB000C305FF /* XJTUtilitiesDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTUtilitiesDefines.h; sourceTree = "<group>"; };
+		3D358196200C4D3800C305FF /* InHeart-Training-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InHeart-Training-Prefix.pch"; sourceTree = "<group>"; };
+		3D358198200C53F500C305FF /* XJTMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTMainTabBarController.h; sourceTree = "<group>"; };
+		3D358199200C53F500C305FF /* XJTMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTMainTabBarController.m; sourceTree = "<group>"; };
+		3D35819B200C796300C305FF /* XJTRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTRequestManager.h; sourceTree = "<group>"; };
+		3D35819C200C796300C305FF /* XJTRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTRequestManager.m; sourceTree = "<group>"; };
+		3D35819E200C82C700C305FF /* XJTBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTBaseRequest.h; sourceTree = "<group>"; };
+		3D35819F200C82C700C305FF /* XJTBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTBaseRequest.m; sourceTree = "<group>"; };
+		3D3581A1200D929A00C305FF /* XJTBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTBaseModel.h; sourceTree = "<group>"; };
+		3D3581A2200D929A00C305FF /* XJTBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTBaseModel.m; sourceTree = "<group>"; };
+		3D577D602015B63500AF2E59 /* XJTSearchPatientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTSearchPatientViewController.h; sourceTree = "<group>"; };
+		3D577D612015B63500AF2E59 /* XJTSearchPatientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTSearchPatientViewController.m; sourceTree = "<group>"; };
+		3D577D642015B79700AF2E59 /* XJTTrainingCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTTrainingCenterViewController.h; sourceTree = "<group>"; };
+		3D577D652015B79700AF2E59 /* XJTTrainingCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTTrainingCenterViewController.m; sourceTree = "<group>"; };
 		3D75A9F52005EA1500231987 /* InHeart-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InHeart-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D75A9F82005EA1500231987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D75A9F92005EA1500231987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3D75A9FB2005EA1500231987 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3D75A9FC2005EA1500231987 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D75A9FF2005EA1500231987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D75AA012005EA1500231987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D75AA042005EA1500231987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +103,23 @@
 		3D75AA182005EA1500231987 /* InHeart-TrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InHeart-TrainingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D75AA1C2005EA1500231987 /* InHeart_TrainingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InHeart_TrainingUITests.m; sourceTree = "<group>"; };
 		3D75AA1E2005EA1500231987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Connect.storyboard; sourceTree = "<group>"; };
+		3D7DDBF32044EE350046BDAC /* XJTConnectNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTConnectNavigationController.h; sourceTree = "<group>"; };
+		3D7DDBF42044EE350046BDAC /* XJTConnectNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTConnectNavigationController.m; sourceTree = "<group>"; };
+		3D7DDBF62044EE570046BDAC /* XJTConnectIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTConnectIPViewController.h; sourceTree = "<group>"; };
+		3D7DDBF72044EE570046BDAC /* XJTConnectIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTConnectIPViewController.m; sourceTree = "<group>"; };
+		3D7DDBF9204529930046BDAC /* XJTConnectBlueToothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTConnectBlueToothViewController.h; sourceTree = "<group>"; };
+		3D7DDBFA204529930046BDAC /* XJTConnectBlueToothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTConnectBlueToothViewController.m; sourceTree = "<group>"; };
+		3D7DDBFD20453D3A0046BDAC /* XJTBlueToothCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTBlueToothCell.h; sourceTree = "<group>"; };
+		3D7DDBFE20453D3A0046BDAC /* XJTBlueToothCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTBlueToothCell.m; sourceTree = "<group>"; };
+		3D7DDC052047A4060046BDAC /* XJTSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTSocketManager.h; sourceTree = "<group>"; };
+		3D7DDC062047A4060046BDAC /* XJTSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTSocketManager.m; sourceTree = "<group>"; };
+		3D7DDC082047CC3A0046BDAC /* XJTBleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTBleManager.h; sourceTree = "<group>"; };
+		3D7DDC092047CC3A0046BDAC /* XJTBleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTBleManager.m; sourceTree = "<group>"; };
+		3D7DDC0B2047ED5D0046BDAC /* XJTContentDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTContentDataViewController.h; sourceTree = "<group>"; };
+		3D7DDC0C2047ED5D0046BDAC /* XJTContentDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTContentDataViewController.m; sourceTree = "<group>"; };
+		3D7DDC11204922940046BDAC /* XJTAlertTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTAlertTipView.h; sourceTree = "<group>"; };
+		3D7DDC12204922940046BDAC /* XJTAlertTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTAlertTipView.m; sourceTree = "<group>"; };
 		BBEAF8D82DCC8D49F029F302 /* Pods-InHeart-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InHeart-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InHeart-Training/Pods-InHeart-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		C32BC3EE32DCE61E93BAFD1F /* libPods-InHeart-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InHeart-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +150,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0CE4F4201EB2430062BA49 /* PatientsManagement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PatientsManagement;
+			sourceTree = "<group>";
+		};
+		3D0CE4F5201ED5E70062BA49 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3D0CE4F6201ED5FB0062BA49 /* XLKit */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3D0CE4F6201ED5FB0062BA49 /* XLKit */ = {
+			isa = PBXGroup;
+			children = (
+				3D0CE4F7201ED5FB0062BA49 /* XLAlertControllerObject.h */,
+				3D0CE4F8201ED5FB0062BA49 /* XLAlertControllerObject.m */,
+				3D0CE4F9201ED5FB0062BA49 /* XLBlockActionSheet.h */,
+				3D0CE4FA201ED5FB0062BA49 /* XLBlockActionSheet.m */,
+				3D0CE4FB201ED5FB0062BA49 /* XLBlockAlertView.h */,
+				3D0CE4FC201ED5FB0062BA49 /* XLBlockAlertView.m */,
+				3D0CE4FD201ED5FB0062BA49 /* XLBlockedButton.h */,
+				3D0CE4FE201ED5FB0062BA49 /* XLBlockedButton.m */,
+				3D0CE501201ED5FB0062BA49 /* XLHyperLinkButton.h */,
+				3D0CE502201ED5FB0062BA49 /* XLHyperLinkButton.m */,
+			);
+			path = XLKit;
+			sourceTree = "<group>";
+		};
+		3D358186200C43CC00C305FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D358187200C441C00C305FF /* XJTLoginViewController.h */,
+				3D358188200C441C00C305FF /* XJTLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D358197200C53D400C305FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D358198200C53F500C305FF /* XJTMainTabBarController.h */,
+				3D358199200C53F500C305FF /* XJTMainTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3D577D5F2015B5D700AF2E59 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				3D577D602015B63500AF2E59 /* XJTSearchPatientViewController.h */,
+				3D577D612015B63500AF2E59 /* XJTSearchPatientViewController.m */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		3D577D632015B6E900AF2E59 /* TrainingCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3D577D642015B79700AF2E59 /* XJTTrainingCenterViewController.h */,
+				3D577D652015B79700AF2E59 /* XJTTrainingCenterViewController.m */,
+			);
+			path = TrainingCenter;
+			sourceTree = "<group>";
+		};
 		3D75A9EC2005EA1500231987 = {
 			isa = PBXGroup;
 			children = (
@@ -108,15 +243,20 @@
 		3D75A9F72005EA1500231987 /* InHeart-Training */ = {
 			isa = PBXGroup;
 			children = (
+				3D75AA3C20088DD000231987 /* Storyboards */,
+				3D75AA3F20088E5E00231987 /* Features */,
+				3D75AA3E20088E3200231987 /* Model */,
+				3D75AA3D20088DEF00231987 /* Request */,
+				3D75AA4020088ECA00231987 /* Commons */,
+				3D0CE4F5201ED5E70062BA49 /* Vendor */,
 				3D75A9F82005EA1500231987 /* AppDelegate.h */,
 				3D75A9F92005EA1500231987 /* AppDelegate.m */,
-				3D75A9FB2005EA1500231987 /* ViewController.h */,
-				3D75A9FC2005EA1500231987 /* ViewController.m */,
 				3D75A9FE2005EA1500231987 /* Main.storyboard */,
 				3D75AA012005EA1500231987 /* Assets.xcassets */,
 				3D75AA032005EA1500231987 /* LaunchScreen.storyboard */,
 				3D75AA062005EA1500231987 /* Info.plist */,
 				3D75AA072005EA1500231987 /* main.m */,
+				3D358196200C4D3800C305FF /* InHeart-Training-Prefix.pch */,
 			);
 			path = "InHeart-Training";
 			sourceTree = "<group>";
@@ -137,6 +277,98 @@
 				3D75AA1E2005EA1500231987 /* Info.plist */,
 			);
 			path = "InHeart-TrainingUITests";
+			sourceTree = "<group>";
+		};
+		3D75AA3C20088DD000231987 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D75AA3D20088DEF00231987 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDC042047A3FB0046BDAC /* Managers */,
+				3D35819B200C796300C305FF /* XJTRequestManager.h */,
+				3D35819C200C796300C305FF /* XJTRequestManager.m */,
+				3D35819E200C82C700C305FF /* XJTBaseRequest.h */,
+				3D35819F200C82C700C305FF /* XJTBaseRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3D75AA3E20088E3200231987 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D3581A1200D929A00C305FF /* XJTBaseModel.h */,
+				3D3581A2200D929A00C305FF /* XJTBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D75AA3F20088E5E00231987 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3D358197200C53D400C305FF /* Main */,
+				3D7DDBF22044EE010046BDAC /* Connect */,
+				3D358186200C43CC00C305FF /* Login */,
+				3D577D5F2015B5D700AF2E59 /* Homepage */,
+				3D577D632015B6E900AF2E59 /* TrainingCenter */,
+				3D0CE4F4201EB2430062BA49 /* PatientsManagement */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3D75AA4020088ECA00231987 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				3D35818A200C483500C305FF /* XJTCommonsDefines.h */,
+				3D35818B200C483500C305FF /* XJTCommonsDefines.m */,
+				3D35818D200C495400C305FF /* XJTUtilities.h */,
+				3D35818E200C495400C305FF /* XJTUtilities.m */,
+				3D358193200C4BB000C305FF /* XJTUtilitiesDefines.h */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		3D7DDBF22044EE010046BDAC /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDBFC20453D200046BDAC /* Views */,
+				3D7DDBF32044EE350046BDAC /* XJTConnectNavigationController.h */,
+				3D7DDBF42044EE350046BDAC /* XJTConnectNavigationController.m */,
+				3D7DDBF62044EE570046BDAC /* XJTConnectIPViewController.h */,
+				3D7DDBF72044EE570046BDAC /* XJTConnectIPViewController.m */,
+				3D7DDBF9204529930046BDAC /* XJTConnectBlueToothViewController.h */,
+				3D7DDBFA204529930046BDAC /* XJTConnectBlueToothViewController.m */,
+				3D7DDC0B2047ED5D0046BDAC /* XJTContentDataViewController.h */,
+				3D7DDC0C2047ED5D0046BDAC /* XJTContentDataViewController.m */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		3D7DDBFC20453D200046BDAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDBFD20453D3A0046BDAC /* XJTBlueToothCell.h */,
+				3D7DDBFE20453D3A0046BDAC /* XJTBlueToothCell.m */,
+				3D7DDC11204922940046BDAC /* XJTAlertTipView.h */,
+				3D7DDC12204922940046BDAC /* XJTAlertTipView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D7DDC042047A3FB0046BDAC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDC052047A4060046BDAC /* XJTSocketManager.h */,
+				3D7DDC062047A4060046BDAC /* XJTSocketManager.m */,
+				3D7DDC082047CC3A0046BDAC /* XJTBleManager.h */,
+				3D7DDC092047CC3A0046BDAC /* XJTBleManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		96E57FDC9CACBD2E22BC1E38 /* Pods */ = {
@@ -227,6 +459,11 @@
 					3D75A9F42005EA1500231987 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					3D75AA0C2005EA1500231987 = {
 						CreatedOnToolsVersion = 9.2;
@@ -268,6 +505,7 @@
 				3D75AA052005EA1500231987 /* LaunchScreen.storyboard in Resources */,
 				3D75AA022005EA1500231987 /* Assets.xcassets in Resources */,
 				3D75AA002005EA1500231987 /* Main.storyboard in Resources */,
+				3D7DDBF12044EAFC0046BDAC /* Connect.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +578,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D75A9FD2005EA1500231987 /* ViewController.m in Sources */,
+				3D7DDC0A2047CC3A0046BDAC /* XJTBleManager.m in Sources */,
+				3D35818F200C495400C305FF /* XJTUtilities.m in Sources */,
+				3D358189200C441C00C305FF /* XJTLoginViewController.m in Sources */,
 				3D75AA082005EA1500231987 /* main.m in Sources */,
+				3D35818C200C483500C305FF /* XJTCommonsDefines.m in Sources */,
 				3D75A9FA2005EA1500231987 /* AppDelegate.m in Sources */,
+				3D0CE508201ED5FB0062BA49 /* XLHyperLinkButton.m in Sources */,
+				3D0CE505201ED5FB0062BA49 /* XLBlockAlertView.m in Sources */,
+				3D7DDBFB204529930046BDAC /* XJTConnectBlueToothViewController.m in Sources */,
+				3D3581A0200C82C700C305FF /* XJTBaseRequest.m in Sources */,
+				3D7DDC13204922950046BDAC /* XJTAlertTipView.m in Sources */,
+				3D7DDBFF20453D3A0046BDAC /* XJTBlueToothCell.m in Sources */,
+				3D577D662015B79700AF2E59 /* XJTTrainingCenterViewController.m in Sources */,
+				3D7DDBF52044EE350046BDAC /* XJTConnectNavigationController.m in Sources */,
+				3D0CE506201ED5FB0062BA49 /* XLBlockedButton.m in Sources */,
+				3D3581A3200D929A00C305FF /* XJTBaseModel.m in Sources */,
+				3D35819D200C796300C305FF /* XJTRequestManager.m in Sources */,
+				3D7DDC0D2047ED5D0046BDAC /* XJTContentDataViewController.m in Sources */,
+				3D577D622015B63500AF2E59 /* XJTSearchPatientViewController.m in Sources */,
+				3D0CE504201ED5FB0062BA49 /* XLBlockActionSheet.m in Sources */,
+				3D7DDBF82044EE570046BDAC /* XJTConnectIPViewController.m in Sources */,
+				3D35819A200C53F500C305FF /* XJTMainTabBarController.m in Sources */,
+				3D7DDC072047A4070046BDAC /* XJTSocketManager.m in Sources */,
+				3D0CE503201ED5FB0062BA49 /* XLAlertControllerObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,12 +765,18 @@
 			baseConfigurationReference = BBEAF8D82DCC8D49F029F302 /* Pods-InHeart-Training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TD7NZ9YYK;
+				DEVELOPMENT_TEAM = NU4X48R8LQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InHeart-Training/InHeart-Training-Prefix.pch";
 				INFOPLIST_FILE = "InHeart-Training/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xlp.InHeart-Training";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.vrdrug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -521,12 +786,18 @@
 			baseConfigurationReference = 1093E17DA8D76D9F83121086 /* Pods-InHeart-Training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TD7NZ9YYK;
+				DEVELOPMENT_TEAM = NU4X48R8LQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InHeart-Training/InHeart-Training-Prefix.pch";
 				INFOPLIST_FILE = "InHeart-Training/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xlp.InHeart-Training";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.vrdrug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

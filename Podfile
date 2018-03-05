@@ -4,5 +4,8 @@ target 'InHeart-Training' do
 pod 'AFNetworking'
 pod 'YYModel'
 pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'CocoaAsyncSocket'
+pod 'MBProgressHUD'
 end 
 

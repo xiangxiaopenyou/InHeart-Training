@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  XJTAlertTipView.h
 //  InHeart-Training
 //
-//  Created by 项小盆友 on 2018/1/10.
+//  Created by 项小盆友 on 2018/3/2.
 //  Copyright © 2018年 项小盆友. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface XJTAlertTipView : UIView
 
 @end
-
