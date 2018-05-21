@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -301,9 +300,46 @@
                                             <action selector="logoutAction:" destination="QW9-AC-JQa" eventType="touchUpInside" id="8W0-w2-ddY"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6J-DD-guy">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6J-DD-guy">
                                         <rect key="frame" x="28" y="95" width="928" height="522"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_rate" translatesAutoresizingMaskIntoConstraints="NO" id="pYz-D0-acX">
+                                                <rect key="frame" x="44" y="19" width="123" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="DhG-y1-tVQ"/>
+                                                    <constraint firstAttribute="width" constant="123" id="sq3-39-2Rg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-vM-Usk">
+                                                <rect key="frame" x="217" y="30" width="34" height="61"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="51"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bpm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egk-XJ-HxT">
+                                                <rect key="frame" x="271" y="50" width="57.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心率检测" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daj-hV-fLc">
+                                                <rect key="frame" x="802" y="50" width="82" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="DRM-vM-Usk" firstAttribute="top" secondItem="R6J-DD-guy" secondAttribute="top" constant="30" id="8aM-Go-mRD"/>
+                                            <constraint firstItem="egk-XJ-HxT" firstAttribute="top" secondItem="R6J-DD-guy" secondAttribute="top" constant="50" id="C7L-H6-IT4"/>
+                                            <constraint firstItem="pYz-D0-acX" firstAttribute="top" secondItem="R6J-DD-guy" secondAttribute="top" constant="19" id="FZ2-Z9-Vd9"/>
+                                            <constraint firstAttribute="trailing" secondItem="daj-hV-fLc" secondAttribute="trailing" constant="44" id="HZK-Hd-7d3"/>
+                                            <constraint firstItem="daj-hV-fLc" firstAttribute="top" secondItem="R6J-DD-guy" secondAttribute="top" constant="50" id="YFO-GD-PI0"/>
+                                            <constraint firstItem="pYz-D0-acX" firstAttribute="leading" secondItem="R6J-DD-guy" secondAttribute="leading" constant="44" id="ia8-fQ-5u5"/>
+                                            <constraint firstItem="egk-XJ-HxT" firstAttribute="leading" secondItem="DRM-vM-Usk" secondAttribute="trailing" constant="20" id="mkw-Io-D4Y"/>
+                                            <constraint firstItem="DRM-vM-Usk" firstAttribute="leading" secondItem="pYz-D0-acX" secondAttribute="trailing" constant="50" id="say-1o-F95"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -384,8 +420,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="avatarImageView" destination="C65-pI-h7f" id="04M-ny-lrz"/>
+                        <outlet property="heartRateLabel" destination="DRM-vM-Usk" id="8yd-yo-jOE"/>
                         <outlet property="ipLabel" destination="s1j-kE-NCi" id="Sh5-n2-YbB"/>
                         <outlet property="nameLabel" destination="ike-NW-ITP" id="kaP-9u-zhG"/>
+                        <outlet property="rateImageView" destination="pYz-D0-acX" id="tO3-o1-0Rv"/>
                         <outlet property="sexLabel" destination="Gen-fL-Spl" id="ach-gx-can"/>
                         <outlet property="viewOfContent" destination="R6J-DD-guy" id="PgF-D1-Vlu"/>
                     </connections>
@@ -400,6 +438,7 @@
         <image name="blue_tooth_small" width="12" height="16"/>
         <image name="connect_logout_selected" width="70" height="30"/>
         <image name="connected" width="8" height="8"/>
+        <image name="heart_rate" width="246" height="185"/>
         <image name="input_selected" width="267" height="40"/>
         <image name="input_unselected" width="267" height="40"/>
         <image name="main_background" width="1024" height="768"/>

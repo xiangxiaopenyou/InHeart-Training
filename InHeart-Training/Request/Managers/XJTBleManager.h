@@ -16,6 +16,7 @@
 
 @protocol XJTBleManagerCommunicationDelegate <NSObject>
 - (void)bleDidReady;
+- (void)didReceiveHeartRateData:(NSInteger)rateInt;
 @end
 
 @interface XJTBleManager : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate>
@@ -29,7 +30,9 @@
 
 + (XJTBleManager *)sharedBleManager;
 - (void)connectPeripheral:(CBPeripheral *)tempPeripheral;
+- (void)disconnectPeripheral:(CBPeripheral *)tempPeripheral;
 - (void)readyForStart;
+- (void)startCommand;
 - (void)writeDateToPeripherial:(NSData *)data;
 
 @end

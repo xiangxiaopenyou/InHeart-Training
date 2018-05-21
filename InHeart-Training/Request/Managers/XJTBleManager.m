@@ -33,8 +33,12 @@
     hud.label.text = @"正在连接...";
     [self.manager connectPeripheral:tempPeripheral options:nil];
 }
+- (void)disconnectPeripheral:(CBPeripheral *)tempPeripheral {
+    [self.manager cancelPeripheralConnection:tempPeripheral];
+}
 - (void)readyForStart {
     [self.peripheral discoverServices:nil];
+    
 }
 //开始指令
 - (void)startCommand {
@@ -165,6 +169,7 @@
             Byte bytes[12] = {0x01, 0x5A, 0x81, 0x08, 0x55, 0xAA, 0x11, 0x22, 0x64, 0x18, 0x90, 0x99};
             NSData *data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
             [self writeDateToPeripherial:data];
+            [self startCommand];
         }
         if ([characteristic.UUID.UUIDString isEqualToString:@"6E400003-B5A3-F393-E0A9-E50E24DCCA9E"])
         {
@@ -185,12 +190,20 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
     NSData *data = characteristic.value;
-    NSLog(@"%@", data);
     NSString *hexString = XJTConvertDataToHexStr(data);
+    NSLog(@"%@", hexString);
     if ([hexString isEqualToString:@"015a810100"]) {
         //系统连接完成
         if (self.communicationDelegate && [self.communicationDelegate respondsToSelector:@selector(bleDidReady)]) {
             [self.communicationDelegate bleDidReady];
+        }
+    } else if ([hexString containsString:@"07038101"]) {
+        //返回实时心率数据
+        NSString *rateString = [hexString substringFromIndex:hexString.length - 2];
+        NSInteger tempInt = XJTNumberWithHexString(rateString);
+        NSLog(@"%@", @(tempInt));
+        if (self.communicationDelegate && [self.communicationDelegate respondsToSelector:@selector(didReceiveHeartRateData:)]) {
+            [self.communicationDelegate didReceiveHeartRateData:tempInt];
         }
     }
 }

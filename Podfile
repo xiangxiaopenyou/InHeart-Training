@@ -7,5 +7,6 @@ pod 'Masonry'
 pod 'IQKeyboardManager'
 pod 'CocoaAsyncSocket'
 pod 'MBProgressHUD'
+pod 'SDWebImage'
 end 
 

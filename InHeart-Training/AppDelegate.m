@@ -11,6 +11,7 @@
 #import "XJTMainTabBarController.h"
 #import "XJTConnectIPViewController.h"
 #import "XJTConnectNavigationController.h"
+#import "XJTConnectBlueToothViewController.h"
 
 @interface AppDelegate ()
 
@@ -72,7 +73,11 @@
     if ([notification.object boolValue]) {
         
     } else {
-        XJTConnectIPViewController *ipController = [[UIStoryboard storyboardWithName:@"Connect" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTConnectIP"];
+        
+//        XJTConnectIPViewController *ipController = [[UIStoryboard storyboardWithName:@"Connect" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTConnectIP"];
+//        XJTConnectNavigationController *navigation = [[XJTConnectNavigationController alloc] initWithRootViewController:ipController];
+//        self.window.rootViewController = navigation;
+        XJTConnectBlueToothViewController *ipController = [[UIStoryboard storyboardWithName:@"Connect" bundle:nil] instantiateViewControllerWithIdentifier:@"XJTConnectBlueTooth"];
         XJTConnectNavigationController *navigation = [[XJTConnectNavigationController alloc] initWithRootViewController:ipController];
         self.window.rootViewController = navigation;
     }

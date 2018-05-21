@@ -1,0 +1,54 @@
+
+/* Class = "UINavigationItem"; title = "返回"; ObjectID = "3Tg-Jh-Onw"; */
+"3Tg-Jh-Onw.title" = "返回";
+
+/* Class = "UILabel"; text = "请重新输入IP"; ObjectID = "845-aT-pvJ"; */
+"845-aT-pvJ.text" = "请重新输入IP";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "DRM-vM-Usk"; */
+"DRM-vM-Usk.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "注销"; ObjectID = "Eg3-Fy-bTD"; */
+"Eg3-Fy-bTD.normalTitle" = "注销";
+
+/* Class = "UINavigationItem"; title = "连接手环"; ObjectID = "FTW-BM-bGQ"; */
+"FTW-BM-bGQ.title" = "连接手环";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Gen-fL-Spl"; */
+"Gen-fL-Spl.text" = "Label";
+
+/* Class = "UILabel"; text = "您已成功连接"; ObjectID = "IKI-Mc-l81"; */
+"IKI-Mc-l81.text" = "您已成功连接";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JJZ-3o-lKL"; */
+"JJZ-3o-lKL.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "手环"; ObjectID = "Xhl-lC-nlQ"; */
+"Xhl-lC-nlQ.normalTitle" = "手环";
+
+/* Class = "UILabel"; text = "设备"; ObjectID = "Xqq-bj-M9T"; */
+"Xqq-bj-M9T.text" = "设备";
+
+/* Class = "UILabel"; text = "心率检测"; ObjectID = "daj-hV-fLc"; */
+"daj-hV-fLc.text" = "心率检测";
+
+/* Class = "UILabel"; text = "bpm"; ObjectID = "egk-XJ-HxT"; */
+"egk-XJ-HxT.text" = "bpm";
+
+/* Class = "UITextField"; placeholder = "请输入IP地址"; ObjectID = "iHP-aQ-ZDl"; */
+"iHP-aQ-ZDl.placeholder" = "请输入IP地址";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ike-NW-ITP"; */
+"ike-NW-ITP.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "虚拟成瘾评估康复系统"; ObjectID = "lHo-FD-Km2"; */
+"lHo-FD-Km2.title" = "虚拟成瘾评估康复系统";
+
+/* Class = "UILabel"; text = "杭州心景科技"; ObjectID = "lXS-tz-Ybi"; */
+"lXS-tz-Ybi.text" = "杭州心景科技";
+
+/* Class = "UILabel"; text = "杭州心景科技"; ObjectID = "qVr-vW-Gmz"; */
+"qVr-vW-Gmz.text" = "杭州心景科技";
+
+/* Class = "UILabel"; text = "IP地址："; ObjectID = "s1j-kE-NCi"; */
+"s1j-kE-NCi.text" = "IP地址：";

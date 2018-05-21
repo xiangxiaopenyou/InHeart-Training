@@ -8,9 +8,13 @@
 
 #import "XJTContentDataViewController.h"
 
+#import "YSCWaveView.h"
+
 #import "XJTBleManager.h"
 #import "XJTSocketManager.h"
 #import "XLAlertControllerObject.h"
+
+#import <UIImage+GIF.h>
 
 @interface XJTContentDataViewController () <XJTBleManagerCommunicationDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
@@ -18,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *sexLabel;
 @property (weak, nonatomic) IBOutlet UIView *viewOfContent;
 @property (weak, nonatomic) IBOutlet UILabel *ipLabel;
+@property (weak, nonatomic) IBOutlet UILabel *heartRateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *rateImageView;
+@property (nonatomic, strong) YSCWaveView *waveView;
+@property (nonatomic, strong) NSMutableArray *heartRateDataArray;
 
 @end
 
@@ -31,7 +39,20 @@
     self.ipLabel.text = [NSString stringWithFormat:@"IP地址：%@", ipString];
     [XJTBleManager sharedBleManager].communicationDelegate = self;
     [[XJTBleManager sharedBleManager] readyForStart];
+
+    NSString *ratePath = [[NSBundle mainBundle] pathForResource:@"heart_rate" ofType:@"gif"];
+    NSData *imageData = [NSData dataWithContentsOfFile:ratePath];
+    UIImage *rateImage = [UIImage sd_animatedGIFWithData:imageData];
+    
+    self.rateImageView.image = rateImage;
+    
+    
+    [self.viewOfContent addSubview:self.waveView];
+    [self.waveView showWaveViewWithType:YSCWaveTypePulse];
+    
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,9 +68,6 @@
         Byte bytes[5] = {0x84, 0x00, 0x81, 0x01, 0x00};
         NSData *data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
         [[XJTBleManager sharedBleManager] writeDateToPeripherial:data];
-//        Byte bytesRecovery[5] = {0x84, 0x00, 0x81, 0x01, 0x00};
-//        NSData *data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
-//        [[XJTBleManager sharedBleManager] writeDateToPeripherial:data];
     }];
 }
 
@@ -58,6 +76,15 @@
     //给服务器传送初始化完成指令
     NSData *data = [@"initialcomplete" dataUsingEncoding:NSUTF8StringEncoding];
     [[XJTSocketManager sharedXJTSocketManager] writeDataToService:data];
+}
+- (void)didReceiveHeartRateData:(NSInteger)rateInt {
+    self.heartRateLabel.text = [NSString stringWithFormat:@"%@", @(rateInt)];
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:currentDate];
+    NSString *dataString = [NSString stringWithFormat:@"%@+%@+@%@@%@", @(rateInt), @(rateInt), @(rateInt), dateString];
+    [self.heartRateDataArray addObject:dataString];
 }
 
 /*
@@ -69,5 +96,20 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Getters
+- (YSCWaveView *)waveView {
+    if (!_waveView) {
+        _waveView = [[YSCWaveView alloc] initWithFrame:CGRectMake(- 120, 120, CGRectGetWidth(self.viewOfContent.frame) + 120, CGRectGetHeight(self.viewOfContent.frame) - 120)];
+        _waveView.backgroundColor = [UIColor whiteColor];
+    }
+    return _waveView;
+}
+- (NSMutableArray *)heartRateDataArray {
+    if (!_heartRateDataArray) {
+        _heartRateDataArray = [[NSMutableArray alloc] init];
+    }
+    return _heartRateDataArray;
+}
 
 @end

@@ -1,0 +1,51 @@
+
+/* Class = "UITabBarItem"; title = "训练中心"; ObjectID = "2U2-f3-cKs"; */
+"2U2-f3-cKs.title" = "训练中心";
+
+/* Class = "UINavigationItem"; title = "系统设置"; ObjectID = "3HR-h3-xM5"; */
+"3HR-h3-xM5.title" = "系统设置";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "7sj-iy-7og"; */
+"7sj-iy-7og.title" = "Root View Controller";
+
+/* Class = "UITabBarItem"; title = "系统设置"; ObjectID = "Aj3-og-whN"; */
+"Aj3-og-whN.title" = "系统设置";
+
+/* Class = "UILabel"; text = "记住密码"; ObjectID = "ED6-yh-Aer"; */
+"ED6-yh-Aer.text" = "记住密码";
+
+/* Class = "UIButton"; normalTitle = "忘记密码"; ObjectID = "Fiu-Vm-uL6"; */
+"Fiu-Vm-uL6.normalTitle" = "忘记密码";
+
+/* Class = "UITextField"; placeholder = "病案号/姓名"; ObjectID = "JZe-Ov-pZy"; */
+"JZe-Ov-pZy.placeholder" = "病案号/姓名";
+
+/* Class = "UINavigationItem"; title = "心理健康训练系统-专业版"; ObjectID = "RQJ-O1-Zh6"; */
+"RQJ-O1-Zh6.title" = "心理健康训练系统-专业版";
+
+/* Class = "UILabel"; text = "心理健康训练系统-专业版"; ObjectID = "UIm-gx-Lig"; */
+"UIm-gx-Lig.text" = "心理健康训练系统-专业版";
+
+/* Class = "UITabBarItem"; title = "患者管理"; ObjectID = "Xco-z3-7nR"; */
+"Xco-z3-7nR.title" = "患者管理";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ZQ1-Vo-ISj"; */
+"ZQ1-Vo-ISj.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "dua-w5-WSa"; */
+"dua-w5-WSa.normalTitle" = "登录";
+
+/* Class = "UITabBarItem"; title = "首页"; ObjectID = "hmi-Xd-RVH"; */
+"hmi-Xd-RVH.title" = "首页";
+
+/* Class = "UITabBarItem"; title = "数据中心"; ObjectID = "lIT-rg-Me7"; */
+"lIT-rg-Me7.title" = "数据中心";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "q8W-hx-2Rd"; */
+"q8W-hx-2Rd.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "搜索"; ObjectID = "qDj-KQ-Wdn"; */
+"qDj-KQ-Wdn.normalTitle" = "搜索";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "w0q-53-TDi"; */
+"w0q-53-TDi.title" = "Root View Controller";

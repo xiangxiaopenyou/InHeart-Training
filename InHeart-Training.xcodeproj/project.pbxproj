@@ -28,7 +28,6 @@
 		3D75AA082005EA1500231987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA072005EA1500231987 /* main.m */; };
 		3D75AA122005EA1500231987 /* InHeart_TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA112005EA1500231987 /* InHeart_TrainingTests.m */; };
 		3D75AA1D2005EA1500231987 /* InHeart_TrainingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75AA1C2005EA1500231987 /* InHeart_TrainingUITests.m */; };
-		3D7DDBF12044EAFC0046BDAC /* Connect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */; };
 		3D7DDBF52044EE350046BDAC /* XJTConnectNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF42044EE350046BDAC /* XJTConnectNavigationController.m */; };
 		3D7DDBF82044EE570046BDAC /* XJTConnectIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBF72044EE570046BDAC /* XJTConnectIPViewController.m */; };
 		3D7DDBFB204529930046BDAC /* XJTConnectBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDBFA204529930046BDAC /* XJTConnectBlueToothViewController.m */; };
@@ -37,6 +36,12 @@
 		3D7DDC0A2047CC3A0046BDAC /* XJTBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC092047CC3A0046BDAC /* XJTBleManager.m */; };
 		3D7DDC0D2047ED5D0046BDAC /* XJTContentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC0C2047ED5D0046BDAC /* XJTContentDataViewController.m */; };
 		3D7DDC13204922950046BDAC /* XJTAlertTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC12204922940046BDAC /* XJTAlertTipView.m */; };
+		3D7DDC88204E58480046BDAC /* heart_rate_wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D7DDC87204E58470046BDAC /* heart_rate_wave.gif */; };
+		3D7DDC8D204E65310046BDAC /* heart_rate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D7DDC8C204E65300046BDAC /* heart_rate.gif */; };
+		3D7DDC90204E7A490046BDAC /* XJTHeartRateWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC8F204E7A490046BDAC /* XJTHeartRateWaveView.m */; };
+		3D7DDC94204F856B0046BDAC /* YSCWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDC93204F856B0046BDAC /* YSCWaveView.m */; };
+		3D7DDC9C205286AA0046BDAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7DDC9E205286AA0046BDAC /* InfoPlist.strings */; };
+		3D9446DE205FB82B0056A492 /* Connect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9446DC205FB82A0056A492 /* Connect.storyboard */; };
 		5D406B974BFB53250C8A029F /* libPods-InHeart-Training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32BC3EE32DCE61E93BAFD1F /* libPods-InHeart-Training.a */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +108,6 @@
 		3D75AA182005EA1500231987 /* InHeart-TrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InHeart-TrainingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D75AA1C2005EA1500231987 /* InHeart_TrainingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InHeart_TrainingUITests.m; sourceTree = "<group>"; };
 		3D75AA1E2005EA1500231987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Connect.storyboard; sourceTree = "<group>"; };
 		3D7DDBF32044EE350046BDAC /* XJTConnectNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTConnectNavigationController.h; sourceTree = "<group>"; };
 		3D7DDBF42044EE350046BDAC /* XJTConnectNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTConnectNavigationController.m; sourceTree = "<group>"; };
 		3D7DDBF62044EE570046BDAC /* XJTConnectIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTConnectIPViewController.h; sourceTree = "<group>"; };
@@ -120,6 +124,18 @@
 		3D7DDC0C2047ED5D0046BDAC /* XJTContentDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTContentDataViewController.m; sourceTree = "<group>"; };
 		3D7DDC11204922940046BDAC /* XJTAlertTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTAlertTipView.h; sourceTree = "<group>"; };
 		3D7DDC12204922940046BDAC /* XJTAlertTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTAlertTipView.m; sourceTree = "<group>"; };
+		3D7DDC87204E58470046BDAC /* heart_rate_wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart_rate_wave.gif; sourceTree = "<group>"; };
+		3D7DDC8C204E65300046BDAC /* heart_rate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart_rate.gif; sourceTree = "<group>"; };
+		3D7DDC8E204E7A490046BDAC /* XJTHeartRateWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTHeartRateWaveView.h; sourceTree = "<group>"; };
+		3D7DDC8F204E7A490046BDAC /* XJTHeartRateWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTHeartRateWaveView.m; sourceTree = "<group>"; };
+		3D7DDC92204F856B0046BDAC /* YSCWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCWaveView.h; sourceTree = "<group>"; };
+		3D7DDC93204F856B0046BDAC /* YSCWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCWaveView.m; sourceTree = "<group>"; };
+		3D7DDC98205286420046BDAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3D7DDC99205286440046BDAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3D7DDC9D205286AA0046BDAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D7DDC9F205286AD0046BDAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3D9446D3205FB6780056A492 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3D9446DF205FB8310056A492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Connect.storyboard; sourceTree = "<group>"; };
 		BBEAF8D82DCC8D49F029F302 /* Pods-InHeart-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InHeart-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InHeart-Training/Pods-InHeart-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		C32BC3EE32DCE61E93BAFD1F /* libPods-InHeart-Training.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InHeart-Training.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +176,7 @@
 		3D0CE4F5201ED5E70062BA49 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3D7DDC91204F855A0046BDAC /* YSCWaveView */,
 				3D0CE4F6201ED5FB0062BA49 /* XLKit */,
 			);
 			path = Vendor;
@@ -222,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				3D75A9F72005EA1500231987 /* InHeart-Training */,
+				3D7DDC89204E5B910046BDAC /* GifFile */,
 				3D75AA102005EA1500231987 /* InHeart-TrainingTests */,
 				3D75AA1B2005EA1500231987 /* InHeart-TrainingUITests */,
 				3D75A9F62005EA1500231987 /* Products */,
@@ -255,6 +273,7 @@
 				3D75AA012005EA1500231987 /* Assets.xcassets */,
 				3D75AA032005EA1500231987 /* LaunchScreen.storyboard */,
 				3D75AA062005EA1500231987 /* Info.plist */,
+				3D7DDC9E205286AA0046BDAC /* InfoPlist.strings */,
 				3D75AA072005EA1500231987 /* main.m */,
 				3D358196200C4D3800C305FF /* InHeart-Training-Prefix.pch */,
 			);
@@ -282,7 +301,7 @@
 		3D75AA3C20088DD000231987 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3D7DDBF02044EAFC0046BDAC /* Connect.storyboard */,
+				3D9446DC205FB82A0056A492 /* Connect.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -356,6 +375,8 @@
 				3D7DDBFE20453D3A0046BDAC /* XJTBlueToothCell.m */,
 				3D7DDC11204922940046BDAC /* XJTAlertTipView.h */,
 				3D7DDC12204922940046BDAC /* XJTAlertTipView.m */,
+				3D7DDC8E204E7A490046BDAC /* XJTHeartRateWaveView.h */,
+				3D7DDC8F204E7A490046BDAC /* XJTHeartRateWaveView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +390,24 @@
 				3D7DDC092047CC3A0046BDAC /* XJTBleManager.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3D7DDC89204E5B910046BDAC /* GifFile */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDC8C204E65300046BDAC /* heart_rate.gif */,
+				3D7DDC87204E58470046BDAC /* heart_rate_wave.gif */,
+			);
+			path = GifFile;
+			sourceTree = "<group>";
+		};
+		3D7DDC91204F855A0046BDAC /* YSCWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				3D7DDC92204F856B0046BDAC /* YSCWaveView.h */,
+				3D7DDC93204F856B0046BDAC /* YSCWaveView.m */,
+			);
+			path = YSCWaveView;
 			sourceTree = "<group>";
 		};
 		96E57FDC9CACBD2E22BC1E38 /* Pods */ = {
@@ -484,6 +523,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3D75A9EC2005EA1500231987;
 			productRefGroup = 3D75A9F62005EA1500231987 /* Products */;
@@ -503,9 +543,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D75AA052005EA1500231987 /* LaunchScreen.storyboard in Resources */,
+				3D9446DE205FB82B0056A492 /* Connect.storyboard in Resources */,
+				3D7DDC9C205286AA0046BDAC /* InfoPlist.strings in Resources */,
 				3D75AA022005EA1500231987 /* Assets.xcassets in Resources */,
+				3D7DDC88204E58480046BDAC /* heart_rate_wave.gif in Resources */,
+				3D7DDC8D204E65310046BDAC /* heart_rate.gif in Resources */,
 				3D75AA002005EA1500231987 /* Main.storyboard in Resources */,
-				3D7DDBF12044EAFC0046BDAC /* Connect.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,9 +626,11 @@
 				3D358189200C441C00C305FF /* XJTLoginViewController.m in Sources */,
 				3D75AA082005EA1500231987 /* main.m in Sources */,
 				3D35818C200C483500C305FF /* XJTCommonsDefines.m in Sources */,
+				3D7DDC94204F856B0046BDAC /* YSCWaveView.m in Sources */,
 				3D75A9FA2005EA1500231987 /* AppDelegate.m in Sources */,
 				3D0CE508201ED5FB0062BA49 /* XLHyperLinkButton.m in Sources */,
 				3D0CE505201ED5FB0062BA49 /* XLBlockAlertView.m in Sources */,
+				3D7DDC90204E7A490046BDAC /* XJTHeartRateWaveView.m in Sources */,
 				3D7DDBFB204529930046BDAC /* XJTConnectBlueToothViewController.m in Sources */,
 				3D3581A0200C82C700C305FF /* XJTBaseRequest.m in Sources */,
 				3D7DDC13204922950046BDAC /* XJTAlertTipView.m in Sources */,
@@ -641,6 +686,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D75A9FF2005EA1500231987 /* Base */,
+				3D7DDC98205286420046BDAC /* zh-Hans */,
+				3D9446D3205FB6780056A492 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -649,8 +696,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D75AA042005EA1500231987 /* Base */,
+				3D7DDC99205286440046BDAC /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D7DDC9E205286AA0046BDAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D7DDC9D205286AA0046BDAC /* en */,
+				3D7DDC9F205286AD0046BDAC /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D9446DC205FB82A0056A492 /* Connect.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9446DF205FB8310056A492 /* Base */,
+			);
+			name = Connect.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -660,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -715,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

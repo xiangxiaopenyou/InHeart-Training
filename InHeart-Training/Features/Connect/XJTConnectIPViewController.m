@@ -49,10 +49,10 @@
             self.tipErrorLabel.hidden = NO;
             self.tipErrorLabel.text = @"请重新输入IP地址!";
         }
-        [XJTSocketManager sharedXJTSocketManager].connectBlock = ^{
+        //[XJTSocketManager sharedXJTSocketManager].connectBlock = ^{
             XJTConnectBlueToothViewController *blueToothController = [self.storyboard instantiateViewControllerWithIdentifier:@"XJTConnectBlueTooth"];
             [self.navigationController pushViewController:blueToothController animated:YES];
-        };
+        //};
     } else {
         self.tipErrorLabel.hidden = NO;
         self.tipErrorLabel.text = @"请检查IP地址格式!";
