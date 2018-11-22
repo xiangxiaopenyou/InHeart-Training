@@ -43,3 +43,12 @@
 //主界面
 #define XJTKeyWindow [UIApplication sharedApplication].keyWindow
 
+//加载提示
+#define XJTShowHUDWithMessage(aString) [XJTUtilities showHUDWithMessage:aString]
+
+//隐藏HUD
+#define XJTHideHUD [XJTUtilities hideHUD]
+
+//成功失败提示
+#define XJTShowHUDTip(aSuccess, aMessage) [XJTUtilities showHUDTip:aSuccess message:aMessage]
+

@@ -9,15 +9,19 @@
 #import <Foundation/Foundation.h>
 
 #import <GCDAsyncSocket.h>
-
-typedef void(^XJTSocketManagerConnectBlock)(void);
+@protocol XJTSocketManagerDelegate<NSObject>
+- (void)socketServerDidConnect;
+@end
 
 @interface XJTSocketManager : NSObject <GCDAsyncSocketDelegate>
 @property (nonatomic, strong) GCDAsyncSocket *socket;
-@property (copy, nonatomic) XJTSocketManagerConnectBlock connectBlock;
+@property (nonatomic, copy) void (^receivedBlock)(NSDictionary *dictionary);
+//@property (nonatomic, copy) void (^disconnectedBlock)(void);
+@property (nonatomic, weak) id<XJTSocketManagerDelegate> delegate;
 
 + (XJTSocketManager *)sharedXJTSocketManager;
 - (BOOL)connectHost:(NSString *)address port:(uint16_t)port;
+- (void)disconnect;
 - (void)writeDataToService:(NSData *)data;
 
 @end

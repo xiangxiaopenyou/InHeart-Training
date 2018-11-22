@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 //@property (nonatomic, strong) CBCentralManager *manager;
-@property (nonatomic, strong) CBPeripheral *peripheral;
+//@property (nonatomic, strong) CBPeripheral *peripheral;
 @property (nonatomic, strong) CBCharacteristic *writeCharacteristic;
 @property (nonatomic, strong) NSMutableArray *bleArray;
 
@@ -87,8 +87,7 @@
         if ([characteristic.UUID.UUIDString isEqualToString:@"6E400002-B5A3-F393-E0A9-E50E24DCCA9E"]) {
             _writeCharacteristic = characteristic;
         }
-        if ([characteristic.UUID.UUIDString isEqualToString:@"6E400003-B5A3-F393-E0A9-E50E24DCCA9E"])
-        {
+        if ([characteristic.UUID.UUIDString isEqualToString:@"6E400003-B5A3-F393-E0A9-E50E24DCCA9E"]) {
             // 订阅特征通知
             [peripheral setNotifyValue:YES forCharacteristic:characteristic];
         }
@@ -96,7 +95,6 @@
 }
 //向peripheral中写入数据后的回调函数
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    
 }
 /**
  根据特征读到数据

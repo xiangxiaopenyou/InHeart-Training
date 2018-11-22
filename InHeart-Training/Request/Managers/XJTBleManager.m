@@ -41,36 +41,44 @@
     
 }
 //开始指令
-- (void)startCommand {
-    //if (self.commandTimes == XJTStartTrainingCommandTimesFirst) {
-        NSString *nameString = @"项林平";
-        NSString *resultString = XJTHexStringFromString(nameString);
-        NSInteger nameLenthHex = XJTHexByDecimal(nameString.length * 3);
-        Byte bytes1[20] = {0x03, 0x00, 0x01, 0x10, nameLenthHex};
-        for (int i = 0; i < 15; i ++) {
-            NSString *tempString = [resultString substringWithRange:NSMakeRange(i * 2, 2)];
-            NSString *tempHexString = [NSString stringWithFormat:@"0x%@", tempString];
-            bytes1[i + 5] = XJTNumberWithHexString(tempHexString);
-        }
-        NSData *data1 = [NSData dataWithBytes:bytes1 length:sizeof(bytes1)];
-        [self writeDateToPeripherial:data1];
-    //} else if (self.commandTimes == XJTStartTrainingCommandTimesSecond) {
-        NSString *phoneString = @"13732254511";
-        Byte bytes2[20] = {0x03, 0x00, 0x02, 0x10, 0x01, 0x01, 0x0B};
-        for (int i = 0; i < phoneString.length; i ++) {
-            NSString *temp = [phoneString substringWithRange:NSMakeRange(i, 1)];
-            NSInteger tempHex = XJTHexByDecimal(temp.integerValue);
-            bytes2[i + 7] = tempHex;
-        }
-        bytes2[18] = 0x00;
-        bytes2[19] = 0x00;
-        NSData *data2 = [NSData dataWithBytes:bytes2 length:sizeof(bytes2)];
-        [self writeDateToPeripherial:data2];
-    //} else {
-        Byte bytes3[8] = {0x03, 0x00, 0x83, 0x04, 0x00, 0x00, 0x20, 0x00};
-        NSData *data3 = [NSData dataWithBytes:bytes3 length:sizeof(bytes3)];
-        [self writeDateToPeripherial:data3];
-    //}
+- (void)startCommand:(XJTOrderModel *)model {
+    NSString *nameString = model.name;
+    NSString *resultString = XJTHexStringFromString(nameString);
+    NSInteger nameLenthHex = XJTHexByDecimal(nameString.length * 3);
+    Byte bytes1[20] = {0x03, 0x00, 0x01, 0x10, nameLenthHex};
+    for (int i = 0; i < 15; i ++) {
+        NSString *tempString = [resultString substringWithRange:NSMakeRange(i * 2, 2)];
+        NSString *tempHexString = [NSString stringWithFormat:@"0x%@", tempString];
+        bytes1[i + 5] = XJTNumberWithHexString(tempHexString);
+    }
+    NSData *data1 = [NSData dataWithBytes:bytes1 length:sizeof(bytes1)];
+    [self writeDateToPeripherial:data1];
+    NSString *phoneString = model.mobile;
+    if (phoneString.length < 11) {
+        phoneString = @"00000000000";
+    }
+    Byte bytes2[20] = {0x03, 0x00, 0x02, 0x10, 0x01, 0x01, 0x0B};
+    for (int i = 0; i < phoneString.length; i ++) {
+        NSString *temp = [phoneString substringWithRange:NSMakeRange(i, 1)];
+        NSInteger tempHex = XJTHexByDecimal(temp.integerValue);
+        bytes2[i + 7] = tempHex;
+    }
+    bytes2[18] = 0x00;
+    bytes2[19] = 0x00;
+    NSData *data2 = [NSData dataWithBytes:bytes2 length:sizeof(bytes2)];
+    [self writeDateToPeripherial:data2];
+    Byte bytes3[8] = {0x03, 0x00, 0x83, 0x04, 0x00, 0x00, 0x20, 0x00};
+    NSData *data3 = [NSData dataWithBytes:bytes3 length:sizeof(bytes3)];
+    [self writeDateToPeripherial:data3];
+}
+//结束指令
+- (void)endCommand {
+    Byte stopBytes[5] = {0x04, 0x00, 0x81, 0x01, 0x00};
+    NSData *stopData = [NSData dataWithBytes:stopBytes length:sizeof(stopBytes)];
+    [self writeDateToPeripherial:stopData];
+    Byte bytes[5] = {0x84, 0x00, 0x81, 0x01, 0x00};
+    NSData *data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
+    [self writeDateToPeripherial:data];
 }
 - (void)writeDateToPeripherial:(NSData *)data {
     [self.peripheral writeValue:data forCharacteristic:self.writeCharacteristic type:CBCharacteristicWriteWithResponse];
@@ -121,8 +129,6 @@
     if (self.connectDelegate && [self.connectDelegate respondsToSelector:@selector(didReceiveConnectResult:)]) {
         [self.connectDelegate didReceiveConnectResult:XJTBleConnectStatusSuccess];
     }
-//    peripheral.delegate = self;
-//    [peripheral discoverServices:nil];
 }
 
 /**
@@ -169,7 +175,7 @@
             Byte bytes[12] = {0x01, 0x5A, 0x81, 0x08, 0x55, 0xAA, 0x11, 0x22, 0x64, 0x18, 0x90, 0x99};
             NSData *data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
             [self writeDateToPeripherial:data];
-            [self startCommand];
+            [self endCommand];
         }
         if ([characteristic.UUID.UUIDString isEqualToString:@"6E400003-B5A3-F393-E0A9-E50E24DCCA9E"])
         {

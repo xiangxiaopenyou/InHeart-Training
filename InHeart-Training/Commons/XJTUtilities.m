@@ -7,6 +7,7 @@
 //
 
 #import "XJTUtilities.h"
+#import <MBProgressHUD.h>
 
 @implementation XJTUtilities
 + (BOOL)isLogin {
@@ -100,6 +101,24 @@
     NSString *pattern = @"^((25[0-5]|2[0-4]\\d|[1]{1}\\d{1}\\d{1}|[1-9]{1}\\d{1}|\\d{1})($|(?!\\.$)\\.)){4}$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     return [predicate evaluateWithObject:address];
+}
++ (void)showHUDWithMessage:(NSString *)message {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:XJTKeyWindow animated:YES];
+    hud.square = YES;
+    hud.label.text = message;
+}
++ (void)hideHUD {
+    [MBProgressHUD hideHUDForView:XJTKeyWindow animated:YES];
+}
++ (void)showHUDTip:(BOOL)isSuccess message:(NSString *)message {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:XJTKeyWindow animated:YES];
+    hud.detailsLabel.text = message;
+    UIImageView *customImage = [[UIImageView alloc] init];
+    customImage.image = isSuccess ? [UIImage imageNamed:@"success_tip"] : [UIImage imageNamed:@"error_tip"];
+    hud.customView = customImage;
+    hud.mode = MBProgressHUDModeCustomView;
+    hud.removeFromSuperViewOnHide = YES;
+    [hud hideAnimated:YES afterDelay:1.f];
 }
 
 @end

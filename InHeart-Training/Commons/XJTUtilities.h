@@ -15,4 +15,7 @@
 + (NSInteger)numberWithHexString:(NSString *)hexString;
 + (NSString *)convertDataToHexStr:(NSData *)data;
 + (BOOL)checkIPAddress:(NSString *)address;
++ (void)showHUDWithMessage:(NSString *)message;
++ (void)hideHUD;
++ (void)showHUDTip:(BOOL)isSuccess message:(NSString *)message;
 @end

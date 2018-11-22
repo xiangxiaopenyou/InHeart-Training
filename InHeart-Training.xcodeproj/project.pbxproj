@@ -21,6 +21,7 @@
 		3D3581A3200D929A00C305FF /* XJTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3581A2200D929A00C305FF /* XJTBaseModel.m */; };
 		3D577D622015B63500AF2E59 /* XJTSearchPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D577D612015B63500AF2E59 /* XJTSearchPatientViewController.m */; };
 		3D577D662015B79700AF2E59 /* XJTTrainingCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D577D652015B79700AF2E59 /* XJTTrainingCenterViewController.m */; };
+		3D5FDEEB21217FF20086C642 /* XJTOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5FDEEA21217FF20086C642 /* XJTOrderModel.m */; };
 		3D75A9FA2005EA1500231987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75A9F92005EA1500231987 /* AppDelegate.m */; };
 		3D75AA002005EA1500231987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D75A9FE2005EA1500231987 /* Main.storyboard */; };
 		3D75AA022005EA1500231987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D75AA012005EA1500231987 /* Assets.xcassets */; };
@@ -94,6 +95,8 @@
 		3D577D612015B63500AF2E59 /* XJTSearchPatientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTSearchPatientViewController.m; sourceTree = "<group>"; };
 		3D577D642015B79700AF2E59 /* XJTTrainingCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTTrainingCenterViewController.h; sourceTree = "<group>"; };
 		3D577D652015B79700AF2E59 /* XJTTrainingCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTTrainingCenterViewController.m; sourceTree = "<group>"; };
+		3D5FDEE921217FF20086C642 /* XJTOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJTOrderModel.h; sourceTree = "<group>"; };
+		3D5FDEEA21217FF20086C642 /* XJTOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJTOrderModel.m; sourceTree = "<group>"; };
 		3D75A9F52005EA1500231987 /* InHeart-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InHeart-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D75A9F82005EA1500231987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D75A9F92005EA1500231987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -323,6 +326,8 @@
 			children = (
 				3D3581A1200D929A00C305FF /* XJTBaseModel.h */,
 				3D3581A2200D929A00C305FF /* XJTBaseModel.m */,
+				3D5FDEE921217FF20086C642 /* XJTOrderModel.h */,
+				3D5FDEEA21217FF20086C642 /* XJTOrderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				3D3581A3200D929A00C305FF /* XJTBaseModel.m in Sources */,
 				3D35819D200C796300C305FF /* XJTRequestManager.m in Sources */,
 				3D7DDC0D2047ED5D0046BDAC /* XJTContentDataViewController.m in Sources */,
+				3D5FDEEB21217FF20086C642 /* XJTOrderModel.m in Sources */,
 				3D577D622015B63500AF2E59 /* XJTSearchPatientViewController.m in Sources */,
 				3D0CE504201ED5FB0062BA49 /* XLBlockActionSheet.m in Sources */,
 				3D7DDBF82044EE570046BDAC /* XJTConnectIPViewController.m in Sources */,
@@ -840,7 +846,7 @@
 				INFOPLIST_FILE = "InHeart-Training/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.vrdrug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.sleepingtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -861,7 +867,7 @@
 				INFOPLIST_FILE = "InHeart-Training/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.vrdrug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medvision.sleepingtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

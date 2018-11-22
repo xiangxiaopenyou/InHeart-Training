@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "XJTOrderModel.h"
 
 @protocol XJTBleManagerConnectDelegate <NSObject>
 - (void)didDiscoverUsefulPeripheral:(NSArray *)peripheralsArray;
@@ -32,7 +33,8 @@
 - (void)connectPeripheral:(CBPeripheral *)tempPeripheral;
 - (void)disconnectPeripheral:(CBPeripheral *)tempPeripheral;
 - (void)readyForStart;
-- (void)startCommand;
+- (void)startCommand:(XJTOrderModel *)model;
+- (void)endCommand;
 - (void)writeDateToPeripherial:(NSData *)data;
 
 @end

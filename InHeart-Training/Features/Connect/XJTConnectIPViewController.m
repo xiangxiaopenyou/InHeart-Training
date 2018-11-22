@@ -11,7 +11,7 @@
 
 #import "XJTSocketManager.h"
 
-@interface XJTConnectIPViewController ()<UITextFieldDelegate>
+@interface XJTConnectIPViewController ()<UITextFieldDelegate, XJTSocketManagerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *inputImageView;
 @property (weak, nonatomic) IBOutlet UILabel *tipErrorLabel;
 
@@ -22,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [XJTSocketManager sharedXJTSocketManager].delegate = self;
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[XJTSocketManager sharedXJTSocketManager] disconnect];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,17 +47,13 @@
     self.tipErrorLabel.hidden = YES;
     [textField resignFirstResponder];
     if (XJTCheckIPAddress(textField.text)) {
-        BOOL isSucceed = [[XJTSocketManager sharedXJTSocketManager] connectHost:textField.text port:8885];
+        BOOL isSucceed = [[XJTSocketManager sharedXJTSocketManager] connectHost:textField.text port:1234];
         if (isSucceed) {
             self.tipErrorLabel.hidden = YES;
         } else {
             self.tipErrorLabel.hidden = NO;
             self.tipErrorLabel.text = @"请重新输入IP地址!";
         }
-        //[XJTSocketManager sharedXJTSocketManager].connectBlock = ^{
-            XJTConnectBlueToothViewController *blueToothController = [self.storyboard instantiateViewControllerWithIdentifier:@"XJTConnectBlueTooth"];
-            [self.navigationController pushViewController:blueToothController animated:YES];
-        //};
     } else {
         self.tipErrorLabel.hidden = NO;
         self.tipErrorLabel.text = @"请检查IP地址格式!";
@@ -60,15 +61,13 @@
     return YES;
 }
 
-//- (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port {
-////    NSData *data = [@"xianglinping" dataUsingEncoding:NSUTF8StringEncoding];
-////    for (NSInteger i = 0; i < 1000; i ++) {
-////        [_socket writeData:data withTimeout:-1 tag:0];
-////        if (i == 999) {
-////            [_socket disconnect];
-////        }
-////    }
-//}
+- (void)socketServerDidConnect {
+    if (self.isViewLoaded && self.view.window) {
+        XJTConnectBlueToothViewController *blueToothController = [self.storyboard instantiateViewControllerWithIdentifier:@"XJTConnectBlueTooth"];
+        [self.navigationController pushViewController:blueToothController animated:YES];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
